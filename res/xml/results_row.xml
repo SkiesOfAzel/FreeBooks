@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#d9eff7"
+	android:padding="10dip" >
+  
+    <TextView android:id="@+id/textListTitle"         
+		android:textStyle="bold" 
+		android:textColor="#406EA1"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:layout_marginRight="25dip"
+		android:ellipsize="marquee" />
+
+	<TextView android:id="@+id/textListAuthor"
+		android:textStyle="italic"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:textColor="#4D4D4D"  
+		android:layout_width="wrap_content"  
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@id/textListTitle"
+		android:singleLine="true"
+		android:layout_marginRight="30dip"
+		android:ellipsize="marquee" />
+		
+	<TextView android:id="@+id/textListLanguage" 
+		android:textStyle="italic"
+		android:textAppearance="?android:attr/textAppearanceSmall"  
+		android:textColor="#999"   
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@id/textListAuthor"
+		android:singleLine="true"
+		android:layout_marginRight="30dip"
+		android:ellipsize="marquee" />
+		
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:src="@drawable/arrow"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true" />		
+	
+</RelativeLayout>

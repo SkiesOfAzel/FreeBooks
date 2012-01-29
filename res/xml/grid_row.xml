@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bookLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <ImageView
+  		android:id="@+id/libraryCover"
+    	android:layout_width="100dip"
+		android:layout_height="140dip"
+		android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding ="5px"
+        android:scaleType="fitXY"
+        android:src="@drawable/book_cover"
+        android:clickable="true"
+        android:onClick="onClickOpenBook" />
+
+	<ImageView
+	    android:id="@+id/libraryCoverDeco"
+	    android:layout_width="100dip"
+	    android:layout_height="140dip"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"
+	    android:scaleType="fitXY"
+	    android:src="@drawable/book_cover_deco" />"
+	
+	<Button
+	    android:id="@+id/libraryDelBook"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_toRightOf="@id/libraryCoverDeco"
+	    android:background="@drawable/delete_book_button"
+	    android:visibility="gone"
+	    android:onClick="onClickDelete" />
+	
+	<TextView
+		android:id="@+id/libraryTextTitle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/libraryCoverDeco"
+	    android:layout_centerHorizontal="true"
+		android:gravity="center_horizontal"
+		android:text="Title"
+		android:singleLine="true"
+		android:ellipsize="none"
+		android:paddingLeft="5dip"
+		android:textColor="#406EA1" />
+	
+	<TextView
+	   	android:id="@+id/libraryTextAuthor"
+	   	android:layout_width="wrap_content"
+	   	android:layout_height="wrap_content"
+	   	android:layout_below="@id/libraryTextTitle"
+	   	android:layout_centerHorizontal="true"
+	   	android:gravity="center_horizontal"
+	   	android:text="Author"
+	   	android:singleLine="true"
+	   	android:ellipsize="none"
+		android:paddingLeft="5dip"
+		android:textColor="#999" />
+	
+	<ImageView
+	    android:layout_width="20dip"
+	    android:layout_height="40dip"
+	    android:layout_below="@id/libraryCoverDeco"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentBottom="true"
+	    android:scaleType="fitXY"
+	    android:src="@drawable/library_text" />
+		
+</RelativeLayout>

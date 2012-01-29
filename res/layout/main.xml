@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+
+	    <LinearLayout
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/top" >
+	        
+	    <ImageView
+	        android:id="@+id/imageLoading"
+	        android:layout_width="60dip"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/loading_animation"
+	        android:gravity="left|center_vertical" />
+	    
+	    <View
+	        android:id="@+id/placeholderLeft"
+	        android:layout_width="60dip"
+	        android:layout_height="fill_parent"
+	        android:gravity="left" />
+	        
+	    <TextView android:text="@string/library"
+        	android:id="@+id/textViewHeader"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:textColor="#fff"
+			android:paddingTop="10dip"
+			android:paddingBottom="10dip"
+			android:textStyle="bold">
+    	</TextView>
+    	
+	    <View
+	        android:id="@+id/placeholderRight"
+	        android:layout_width="60dip"
+	        android:layout_height="fill_parent"
+	        android:gravity="right" />
+	    
+	    <Button 
+	        android:id="@+id/deleteButton"
+	        android:layout_width="60dip"
+	        android:layout_height="fill_parent"
+	        android:background="@drawable/delete_button"
+	        android:gravity="right" />
+	    
+	    <Button 
+	        android:id="@+id/okButton"
+	        android:layout_width="60dip"
+	        android:layout_height="fill_parent"
+	        android:background="@drawable/ok_button"
+	        android:gravity="right" />
+	    
+	    <Button 
+	        android:id="@+id/reloadButton"
+	        android:layout_width="60dip"
+	        android:layout_height="fill_parent"
+	        android:background="@drawable/reload_button"
+	        android:gravity="right" />
+	    
+	    <Button 
+	        android:id="@+id/stopButton"
+	        android:layout_width="60dip"
+	        android:layout_height="fill_parent"
+	        android:background="@drawable/stop_button"
+	        android:gravity="right" />
+    	
+	    <Button 
+	        android:id="@+id/searchButton"
+	        android:layout_width="60dip"
+	        android:layout_height="fill_parent"
+	        android:background="@drawable/search_button"
+	        android:gravity="right" />
+	    
+	    </LinearLayout>
+    
+		<FrameLayout
+	    	android:id="@android:id/tabcontent"
+			android:layout_width="fill_parent"
+        	android:layout_height="0dp"
+			android:layout_weight="1.0"
+			android:padding="5dip" >
+
+			<GridView
+				android:id="@+id/libraryPage" 
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:numColumns="2"
+				android:background="@drawable/list"
+	    		android:cacheColorHint="#00000000"
+	    		android:padding="10dip"
+	    		android:verticalSpacing="10dip"
+    			android:stretchMode="columnWidth"
+    			android:gravity="center_horizontal"
+    			android:listSelector="#d9eff7" />
+			
+			<include
+			    android:id="@+id/categoriesPage"
+	    		layout="@layout/categories_page" />
+			
+			<include
+			    android:id="@+id/searchPage"
+				layout="@layout/search_page" />
+			
+			<include
+			    android:id="@+id/featuredPage"
+				layout="@layout/featured_page" />
+			
+			
+		
+		</FrameLayout>
+	
+	<LinearLayout
+	    android:id="@+id/pageSelector"
+	    android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical" >
+
+		<ToggleButton
+		    android:id="@+id/toggleLibrary"
+		    android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/library_button"
+            android:textOn=""
+            android:textOff="" />
+		
+		<ToggleButton
+		    android:id="@+id/toggleCategories"
+		    android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/categories_button"
+            android:textOn=""
+            android:textOff="" />
+
+		<ToggleButton
+		    android:id="@+id/toggleSearch"
+		    android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/search_button"
+            android:textOn=""
+            android:textOff="" />
+
+		<ToggleButton
+		    android:id="@+id/toggleFeatured"
+		    android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/featured_button"
+            android:textOn=""
+            android:textOff="" />
+
+	</LinearLayout>
+        
+	</LinearLayout>

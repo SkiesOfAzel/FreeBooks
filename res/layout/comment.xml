@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/commentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/list"
+        android:padding="10dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip" >
+        
+        <TextView
+            android:id="@+id/commentTextAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#406EA1"
+            android:paddingBottom="2dip" />
+
+        <TextView
+            android:id="@+id/commentTextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#999"
+            android:paddingBottom="6dip" />
+
+        <WebView
+            android:id="@+id/commentText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        
+	</LinearLayout>

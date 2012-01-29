@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.icsd.freebooks"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-permission
+        android:name="android.permission.INTERNET" />
+    
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Freebooks" >
+        
+        <activity
+            android:label="@string/app_name"
+            android:name=".FreeBooksActivity"
+            android:configChanges="keyboardHidden|orientation"
+        	android:windowSoftInputMode="adjustPan" >
+        	
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                
+            </intent-filter>
+            
+        </activity>
+        
+        <activity
+			android:name=".SubcategoriesPageActivity"
+			android:configChanges="keyboardHidden|orientation"
+        	android:windowSoftInputMode="adjustPan" />
+            
+		<activity
+			android:name=".LanguagePageActivity" />
+		<activity
+			android:name=".ResultsPageActivity"
+			android:configChanges="keyboardHidden|orientation"
+        	android:windowSoftInputMode="adjustPan" />
+            
+		<activity
+			android:name=".BookPageActivity"
+			android:configChanges="keyboardHidden|orientation"
+        	android:windowSoftInputMode="adjustPan" />
+		
+		<activity
+			android:name=".EpubReaderActivity"
+			android:windowSoftInputMode="adjustPan"
+			android:configChanges="keyboardHidden|orientation"
+        	android:theme="@style/Theme.Reader" />
+        
+    </application>
+
+</manifest>

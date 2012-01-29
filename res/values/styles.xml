@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+       
+    <!--<style name="Theme.Preferences"
+        parent="@android:style/Theme.Light.NoTitleBar">
+        
+        <item name="android:windowAnimationStyle">@style/Animations.Preferences</item>
+        <item name="android:listSeparatorTextViewStyle">@style/PreferenceListHeader</item>
+        <item name="android:textAppearanceSmall">@style/TextAppearanceSmall</item>
+        <item name="android:textAppearanceLarge">@style/TextAppearanceLarge</item>
+            
+    </style>
+    
+    <style name="Animations.Preferences"
+	    parent="@android:style/Animation.Activity">
+        
+		<item name="android:activityOpenEnterAnimation">@anim/open_enter</item>
+		<item name="android:activityOpenExitAnimation">@anim/open_exit</item>
+		<item name="android:activityCloseEnterAnimation">@anim/close_enter</item>
+		<item name="android:activityCloseExitAnimation">@anim/close_exit</item>
+		
+	</style>-->
+	
+	<style name="PreferenceListHeader" >
+
+        <item name="android:background">#449ec4</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">25dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">5sp</item>
+		
+	</style>
+
+	<style name="TextAppearanceSmall" parent="@android:style/TextAppearance.Small">
+		<item name="android:textSize">14sp</item>
+		<item name="android:textColor">#999</item>
+  		<item name="android:textStyle">italic</item>
+	</style>
+	
+	<style name="TextAppearanceLarge" parent="@android:style/TextAppearance.Large">
+		<item name="android:textSize">18sp</item>
+		<item name="android:textColor">#406EA1</item>
+  		<item name="android:textStyle">normal</item>
+	</style>
+	
+	<style name="Animations.Zoom"
+	    parent="@android:style/Animation.Activity">
+        
+		<item name="android:activityOpenEnterAnimation">@anim/open_enter</item>
+		<item name="android:activityOpenExitAnimation">@anim/open_exit</item>
+		<item name="android:activityCloseEnterAnimation">@anim/close_enter</item>
+		<item name="android:activityCloseExitAnimation">@anim/close_exit</item>
+		
+	</style>
+	
+	<style name="Animations.Slide"
+	    parent="@android:style/Animation.Activity">
+        
+		<item name="android:activityOpenEnterAnimation">@anim/slide_left_in</item>
+		<item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+		<item name="android:activityCloseEnterAnimation">@anim/slide_right_in</item>
+		<item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+		
+	</style>
+	
+	<style name="RadioButton"
+        parent="@android:style/Widget.CompoundButton.RadioButton">
+		
+		<item name="android:button">@drawable/radio_button</item>
+				
+	</style>
+	
+</resources>

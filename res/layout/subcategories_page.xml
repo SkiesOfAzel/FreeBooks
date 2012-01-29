@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+	    <LinearLayout
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/top" >
+	        
+	        <ImageView
+	       		android:id="@+id/subImageLoading"
+	        	android:layout_width="60dip"
+	        	android:layout_height="wrap_content"
+	        	android:src="@drawable/loading_animation"
+	        	android:gravity="left|center_vertical" />
+        
+	    	<TextView
+	    	    android:text="@string/subcategories"
+        		android:id="@+id/textSubcategoriesHeader"
+				android:layout_width="0dip"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:textColor="#fff"
+				android:textStyle="bold" />
+	    	
+	    	<View
+	        	android:id="@+id/subPlaceholderRight"
+	        	android:layout_width="60dip"
+	        	android:layout_height="fill_parent"
+	        	android:gravity="right" />
+	    	
+	    </LinearLayout>
+	    	
+		<LinearLayout
+	       	android:layout_width="fill_parent"
+	       	android:layout_height="0dip"
+	       	android:layout_weight="1.0"
+	       	android:padding="5dip" >
+	    		    
+	    	<ListView
+	 			android:id="@+id/subcategoriesList"
+	    		android:layout_width="fill_parent"
+	    		android:layout_height="wrap_content"
+	    		android:minHeight="100dip"
+	    		android:background="@drawable/list"
+	    		android:cacheColorHint="#d9eff7"
+	 			android:drawSelectorOnTop="false"
+	 			android:padding="10dip" />
+	    		
+	    </LinearLayout>
+	    	
+		<LinearLayout
+	    	android:orientation="horizontal"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/bottom"
+        	android:layout_alignParentBottom="true"
+        	android:gravity="center_vertical" >
+
+			<Button
+		    	android:id="@+id/subReloadButton"
+		    	android:layout_width="0dp"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1.0"
+            	android:background="@drawable/reload_button" />
+			
+			<Button
+		    	android:id="@+id/subStopButton"
+		    	android:layout_width="0dp"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="1.0"
+            	android:background="@drawable/stop_button" />
+			
+		</LinearLayout>
+	    
+	</LinearLayout>

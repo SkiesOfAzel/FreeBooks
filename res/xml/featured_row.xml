@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+	<RelativeLayout
+  		xmlns:android="http://schemas.android.com/apk/res/android"
+  		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent"
+  		android:padding="10dip" >
+  		
+	    <ImageView
+            android:id="@+id/featuredBook"
+        	android:layout_width="60dip"
+			android:layout_height="80dip"
+			android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="5px"
+            android:layout_marginRight="5dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/cover" />
+	    
+	    <ImageView
+            android:id="@+id/featuredBookCover"
+        	android:layout_width="60dip"
+			android:layout_height="80dip"
+			android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/book_cover_deco" />
+	    
+    	<TextView android:id="@+id/featuredListTitle"         
+			android:textStyle="bold" 
+			android:textColor="#406EA1"
+			android:layout_width="wrap_content"
+			android:ellipsize="none"
+        	android:singleLine="true"  
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_toRightOf="@id/featuredBookCover"
+			android:gravity="center_vertical"
+			android:paddingTop="3dip"
+			android:text="Title" />
+
+		<TextView android:id="@+id/featuredListAuthor"
+			android:textStyle="italic"
+			android:textAppearance="?android:attr/textAppearanceSmall"    
+			android:textColor="#999"
+			android:layout_width="wrap_content"  
+			android:layout_height="wrap_content"
+			android:ellipsize="none"
+        	android:singleLine="true"
+			android:layout_below="@id/featuredListTitle"
+			android:layout_toRightOf="@id/featuredBookCover"
+			android:gravity="center_vertical"
+			android:text="Author" />
+		
+		<Button
+		    android:id="@+id/featuredDownloadButton"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/list_download_button"
+		    android:text="@string/download"
+		    android:focusable="false"
+		    android:textColor="#fff"
+		    android:layout_below="@id/featuredListAuthor"
+		    android:layout_toRightOf="@id/featuredBookCover"
+		    android:layout_marginTop="6dip"
+		    android:onClick="onClickFeatured" />
+		
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="80dip"
+			android:src="@drawable/list_text"
+			android:scaleType="fitXY"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true" />
+		
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:src="@drawable/arrow"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true" />
+		
+	
+	</RelativeLayout>
